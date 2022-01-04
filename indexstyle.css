@@ -18,7 +18,11 @@ color:var(--main-text-color);
 overflow:hidden;
 }
 
-
+::selection {
+    color: white;
+    background: black;
+  }
+  
 
 .wrapper {
   min-height: 100vh;
