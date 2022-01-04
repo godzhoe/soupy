@@ -17,5 +17,12 @@ p {margin-top:-25px;}
   
   }
 
-h1 {font-family:insane;}
+h1 {font-family:insane; margin-top:5px; font-size:3em; line-height:1em;}
   
+#ayeye {
+  position:relative;
+  top:-7.5px;
+}
+
+#um {word-break: break-all; width:300px; }
+#um img {padding:1px;}
