@@ -24,5 +24,5 @@ h1 {font-family:insane; margin-top:5px; font-size:3em; line-height:1em;}
   top:-7.5px;
 }
 
-#um {word-break: break-all; width:300px; margin-top:-150px; text-align:center;}
+#um {word-break: break-all; width:300px; margin-top:-155px; margin-left:-5px; text-align:center; padding-right:8px;}
 #um img {padding:1px;}
