@@ -1,12 +1,3 @@
-#thatsa {
-   
-
-    overflow-x:hidden;
-
-    
-    word-break: break-all;
-}
-
 ::-webkit-scrollbar {
     width: 14.5px;
     height: 10px;
@@ -48,8 +39,17 @@
 
 
 
+
 ::-webkit-scrollbar {
     position:fixed;
     left:-12.5em;
 }
 
+#scrollpadding { padding-bottom:30px; text-align:right; padding-right:20px;} 
+
+@font-face {
+    font-family: 'milky';
+    src: url('idolwild.ttf');
+}
+
+strong {font-family:milky;}
