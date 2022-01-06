@@ -2,9 +2,21 @@
    
 
     overflow-x:hidden;
-
+    text-align:center;
     
-    word-break: break-all;
+   
+}
+
+
+::selection {
+    color: white;
+    background: black;
+}
+
+
+.pain {
+    padding-top:20px;
+    padding-bottom:50px;
 }
 
 ::-webkit-scrollbar {

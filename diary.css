@@ -38,6 +38,12 @@
 }
 
 
+::selection {
+    color: white;
+    background: black;
+}
+
+
 
 
 ::-webkit-scrollbar {
