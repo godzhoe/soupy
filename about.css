@@ -7,60 +7,9 @@
 }
 
 
-::selection {
-    color: white;
-    background: black;
-}
-
-
 .pain {
     padding-top:20px;
-    padding-bottom:50px;
+    padding-bottom:60px;
 }
 
-::-webkit-scrollbar {
-    width: 14.5px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    background-image: url(./scrollbar/thumb.png);
-    border-top: 1px solid #bdbdbd;
-    border-left: 1px solid #bdbdbd;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #fff;
-    background-image: url(./scrollbar/track.png);
-}
-
-::-webkit-scrollbar-button:vertical:increment {
-    background-image: url(./scrollbar/vertdecrement.png);
-    width: 14px;
-    height: 16px;
-    border-top: 1px solid #bdbdbd;
-    border-left: 1px solid #bdbdbd;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-::-webkit-scrollbar-button:vertical:decrement {
-    background-image: url(./scrollbar/vertdecrement.png);
-    border-top: 1px solid #bdbdbd;
-    border-left: 1px solid #bdbdbd;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    width: 14px;
-    height: 16px;
-}
-
-
-
-::-webkit-scrollbar {
-    position:fixed;
-    left:-12.5em;
-}
-
+#ah {padding-bottom:10px;}
