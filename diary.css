@@ -3,6 +3,16 @@
     height: 10px;
 }
 
+#help {
+    max-width:40em;
+}
+
+a {text-decoration:none; color:#4f5a4a;}
+#umm {
+   text-align:left;
+    
+   
+}
 ::-webkit-scrollbar-thumb {
     background-color: #fff;
     background-image: url(./scrollbar/thumb.png);
