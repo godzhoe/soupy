@@ -1,5 +1,4 @@
 
-
 #help {
     max-width:40em;
 }
@@ -10,6 +9,8 @@ a {text-decoration:none; color:#4f5a4a;}
     
    
 }
+#scrollpadding { padding-bottom:30px; text-align:right; padding-right:20px;} 
+
 @font-face {
     font-family: 'milky';
     src: url('idolwild.ttf');
