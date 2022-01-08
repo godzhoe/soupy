@@ -4,7 +4,7 @@
     --title-color: black;
     --body-background-color: rgba(255, 248, 244, 0.8);
     --outline-color: rgba(255, 248, 244, 1);
-    --link-color: #4f5a4a;
+    --link-color: #2f2a3a;
 }
 
 @font-face {
@@ -12,17 +12,14 @@
     src: url('./Hanged\ Letters.ttf');
 }
 
-@font-face {
-    font-family: 'milky';
-    src: url('idolwild.ttf');
-}
 
 body {
     background-color: white;
     background-image: url('./mainbackground.jpeg');
     background-position: center;
     background-size: cover;
-    font-family: milky;
+    font-family: times;
+    
     color: var(--main-text-color);
     overflow: hidden;
 }
@@ -144,7 +141,7 @@ a:hover {
     border-top: 1px var(--main-border-color) solid;
     border-bottom: 1px var(--main-border-color) solid;
 
-    top: -7.15em;
+    top: -7.59em;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
@@ -166,6 +163,7 @@ iframe {
 }
 
 #lynx {
+    
     width: 8.33em;
     align-items: center;
     height: auto;
@@ -175,7 +173,8 @@ iframe {
     left: 0.25em;
     text-align: left;
     padding: 15px 5px 5px 5px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-family:arial;
 }
 
 #lynx a {
@@ -216,7 +215,7 @@ iframe {
     overflow: hidden;
     width: 13.15em;
     left: 0.3em;
-    top: -2.8em;
+    top: -2.35em;
     height: 20em;
     border-top-right-radius: 2.5px;
     border-left: 1px var(--main-border-color) solid;
