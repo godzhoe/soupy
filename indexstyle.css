@@ -2,7 +2,7 @@
     --main-text-color: black;
     --main-border-color: black;
     --title-color: black;
-    --body-background-color: rgba(255, 248, 244, 0.8);
+    --body-background-color: rgba(255, 255, 255, 0.8);
     --outline-color: rgba(255, 248, 244, 1);
     --link-color: #2f2a3a;
 }
@@ -15,7 +15,7 @@
 
 body {
     background-color: white;
-    background-image: url('./mainbackground.jpeg');
+    background-image: url('./mainbackground.png');
     background-position: center;
     background-size: cover;
     font-family: times;
@@ -232,9 +232,7 @@ iframe {
 
 }
 
-#bar img {
-    filter: drop-shadow(1px 1px 0 var(--outline-color)) drop-shadow(-1px 1px 0 var(--outline-color)) drop-shadow(0 -1px 0 var(--outline-color)) drop-shadow(1px 0 var(--outline-color));
-}
+
 
 #ahh {
 
