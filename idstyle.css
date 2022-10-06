@@ -1,10 +1,50 @@
-body {background-color:whtie;
-color:black;
+body {
+    background-color: whtie;
+    color: black;
 }
 
-#centah {display:float; min-height: 100vh;
+#centah {
+    display: float;
+    min-height: 100vh;
     min-width: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;}
+    position: relative;
+}
+
+#ponpon {
+    z-index: 99;
+    animation: bounce 2s infinite;
+    animation-timing-function: cubic-bezier(0.25, 0.85, 0.4, 1)
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-30px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    60% {
+        transform: scale(1, 1) translateY(0px);
+    }
+
+    90% {
+        transform: scale(1.02, .98) translateY(2px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
