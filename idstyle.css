@@ -1,0 +1,10 @@
+body {background-color:whtie;
+color:black;
+}
+
+#centah {display:float; min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;}
