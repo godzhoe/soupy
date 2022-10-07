@@ -31,19 +31,19 @@ $(".run").click(function () {
   if ($that.hasClass("yellow")) {
     $that.animate(
       {
-        left: "150px"
+        left: "120px"
       },
       1000
     );
-    $yeah.animate({ left: "-250px" }, 1000);
+    $yeah.animate({ left: "-180px" }, 1000);
 
     $that.removeClass("yellow");
     $that.addClass("green");
   } else {
-    $that.animate({ left: "30px" }, 1000);
+    $that.animate({ left: "45px" }, 1000);
     $that.removeClass("green");
     $that.addClass("yellow");
 
-    $yeah.animate({ left: "-100px" }, 1000);
+    $yeah.animate({ left: "-95px" }, 1000);
   }
 });
