@@ -31,11 +31,12 @@ $(".run").click(function () {
   if ($that.hasClass("yellow")) {
     $that.animate(
       {
-        left: "120px"
+        left: "160px"
       },
       1000
     );
-    $yeah.animate({ left: "-180px" }, 1000);
+    
+    $yeah.animate({ left: "-235px" }, 1000);
 
     $that.removeClass("yellow");
     $that.addClass("green");
@@ -43,7 +44,9 @@ $(".run").click(function () {
     $that.animate({ left: "45px" }, 1000);
     $that.removeClass("green");
     $that.addClass("yellow");
-
+   
     $yeah.animate({ left: "-95px" }, 1000);
+   
+
   }
 });
