@@ -1,0 +1,32 @@
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;}
+    
+    body {
+    padding-top:10px;
+    font-family:mali;
+    font-size:13px;
+    letter-spacing:1px;
+    text-align:center;
+    overflow-y:hidden;}
+    
+    table {
+    border-collapse:collapse;
+    margin-top:10%;
+    margin-left:auto;
+    margin-right:auto;}
+    
+    table, td, th {
+    border:none;}
+        
+    th, td {
+    padding: 5px;}
+    
+    a { text-decoration:none;
+    color:#de5549; }
+
+
+    font {color:#de5549;}
+    
