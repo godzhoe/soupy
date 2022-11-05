@@ -1,0 +1,25 @@
+body{
+    font-family:mali;
+    letter-spacing:1px;
+}
+
+h1{font-size:16px;}
+
+a{text-decoration:none; color:darkkhaki}
+
+#ahh {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: float;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow:hidden;
+    
+    
+  }
+
+  #main {width:25em; margin-top:-5em; }
+
+  #teehee{float:right; position:relative; left:20em;}
