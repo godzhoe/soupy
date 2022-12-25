@@ -29,4 +29,20 @@ html, body {
 
 
     font {color:#de5549;}
+
+    h1 {
+        font-size: 60px;
+        background-image: url(./assets/tumblr_cf4ec9aeddb626a9c0db48885fe89108_4b7273cd_400.webp);
+        background-size: cover;
+        background-clip: text;
+        position:relative;
+        margin-top:-50px;
+        top:50px;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-stroke: 1px black;
+       font-weight:bold; 
+       font-style: italic;
+       }
+       
     
