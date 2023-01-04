@@ -3,14 +3,10 @@ a {
     color:rgb(89, 132, 40);
 }
 
-@font-face {
-font-family:'sperrypg'; src: url("./Web437_SperryPC_CGA.woff") format("woff");}
-@font-face {
-font-family:'phoenix'; src: url("./Web437_PhoenixVGA_8x8.woff") format("woff"); }
 
 body {
     font-size:12px;
-letter-spacing:0.2px;
+letter-spacing:-1px;
 font-family: sperrypg;}
 
 
@@ -38,7 +34,7 @@ h1 {
 margin-left:2.5em;}
   #main {border:1px black dashed;
     width: 300px;
-    height:200px;
+    height:220px;
     top:-1em;
     font-size:8px;
 
@@ -57,6 +53,6 @@ margin-left:2.5em;}
   #map {overflow-x:hidden;
     overflow-y:scroll;
 height:100px ;
-width:250px;
-margin-left:25px;
+width:275px;
+margin-left:12.5px;
 border:1px dashed rgb(197, 204, 188); }

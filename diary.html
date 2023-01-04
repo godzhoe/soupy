@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOUPY</title>
+    <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./diary.css">
+
+
+</head>
+
+<body onload="bgen()">
+    <div id="main">
+       
+        <div id="buttoncontainer"><div id="buttons"></div></div>
+        <div id="extlinks"><a href="./index.html">home</a> <a href="./lynx.html">links</a></div>
+        <div id="1" class="post">
+            <p>
+            <div class="date">jan 4 2023</div>
+            </p>
+            <p>
+            <div class="subj">a new soup</div>
+            </p>
+            <p>hellooo!!! hopefully this diary lasts longer than the last one.<br>for this diary, i created a more streamlined <a href="https://codepen.io/tubbox/pen/XWBjyQm">entry addition tool</a> that will prevent me from iframe hell. <br><br>about me....i am almost done with high school! i have an acceptance into university for data science, and i am very excited to attend. i've been listing off things that i won't miss when i go to university.<br><br>super firewalled wifi<br>people i've known for ever<br>weirdly timed midterms...<br>uniforms! oh my god<br>the long commute by car<br>low amount of resources for STEM.<br><br>and there's a lot more but i can't list them all. well! thank you for reading. this is more of a test entry than anything :)</p>
+            
+        </div>
+   
+</body>
+
+<script>
+    function bgen() {
+        const entries = [];
+        
+        entries.push("a new soup");
+        
+        var myDiv = document.getElementById("buttons");
+        var docFrag = document.createDocumentFragment();
+        for (var i = 0; i < entries.length; i++) {
+            var myDiv = document.getElementById("buttoncontainer");
+            var u = entries.length - i;
+            var button = document.createElement('BUTTON');
+            button.setAttribute('name', u);
+            const h = button.name;
+            button.addEventListener("click", function (){
+            connect(h);
+            });
+            var text = document.createTextNode(entries[i]);
+            button.appendChild(text);
+            docFrag.appendChild(button);
+        }
+        docFrag.firstChild.click();
+        myDiv.appendChild(docFrag);
+        
+    }
+
+  
+
+    function connect(entry) {
+        var i, post;
+        post = document.getElementsByClassName("post");
+        for (i = 0; i < post.length; i++) {
+            post[i].style.display = "none";
+        }
+        document.getElementById(entry).style.display = "block";
+        event.currentTarget.className += " active";
+    }
+</script>
