@@ -1,9 +1,14 @@
-body {font-family:mali;
-font-size:12px;
-letter-spacing:1px;}
+@font-face {
+    font-family:'sperrypg'; src: url("./Web437_SperryPC_CGA.woff") format("woff");}
+    @font-face {
+    font-family:'phoenix'; src: url("./Web437_PhoenixVGA_8x8.woff") format("woff"); }
+    
+body {font-family:sperrypg;
+font-size:8px;
+letter-spacing:0.2px;}
 
-h1 {font-size:14px;}
-h2, h3{font-size:12px;
+h1 {font-size:10px;}
+h2, h3{font-size:8px;
 font-weight:normal;}
 h3{
     font-style:italic;
@@ -15,7 +20,7 @@ a {text-decoration:none;
 
 #sidebar{
     border-right:1px black dashed;
-    width:12em;
+    width:15em;
     height:100vh;
     text-align:center;
     line-height:20px;
@@ -23,7 +28,7 @@ a {text-decoration:none;
 
 iframe{
     position:relative;
-    left:13em;
+    left:16em;
     top:-100vh;
     height:100vh;
     width:100vh;
@@ -40,4 +45,4 @@ iframe{
 
 h1, h2, h3{margin-left:-5px;}
 
-h3 {border:1px black dashed; padding:2px; width:20em;}
+h3 {border:1px black dashed; padding:2px; width:30em;}

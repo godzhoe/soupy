@@ -1,9 +1,14 @@
+@font-face {
+    font-family:'sperrypg'; src: url("./Web437_SperryPC_CGA.woff") format("woff");}
+    @font-face {
+    font-family:'phoenix'; src: url("./Web437_PhoenixVGA_8x8.woff") format("woff"); }
+
 body{
-    font-family:mali;
-    letter-spacing:1px;
+    font-family:sperrypg;
+    letter-spacing:0.2px;
 }
 
-h1{font-size:16px;}
+h1{font-size:10px;}
 
 a{text-decoration:none; color:darkkhaki}
 
@@ -16,10 +21,11 @@ a{text-decoration:none; color:darkkhaki}
     justify-content: center;
     position: relative;
     overflow:hidden;
+    font-size:8px;
     
     
   }
 
   #main {width:25em; margin-top:-5em; }
 
-  #teehee{float:right; position:relative; left:20em;}
+  #teehee{float:right; position:relative; left:40em;}

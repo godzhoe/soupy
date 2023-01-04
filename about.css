@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'sperrypg'; src: url("./Web437_SperryPC_CGA.woff") format("woff");}
+    @font-face {
+    font-family:'phoenix'; src: url("./Web437_PhoenixVGA_8x8.woff") format("woff"); }
 
 html, body {
     width:100%;
@@ -6,9 +10,10 @@ html, body {
     
     body {
     padding-top:10px;
-    font-family:mali;
-    font-size:13px;
-    letter-spacing:1px;
+    font-family:sperrypg;
+    font-size:9px;
+    letter-spacing:0.2px;
+    
     text-align:center;
     overflow-y:hidden;}
     
@@ -16,13 +21,15 @@ html, body {
     border-collapse:collapse;
     margin-top:10%;
     margin-left:auto;
-    margin-right:auto;}
+    margin-right:auto;
+    }
     
     table, td, th {
     border:none;}
         
     th, td {
-    padding: 5px;}
+    padding: 5px;
+    }
     
     a { text-decoration:none;
     color:#de5549; }
@@ -30,19 +37,24 @@ html, body {
 
     font {color:#de5549;}
 
+    p{
+        line-height:20px;
+    }
+
     h1 {
         font-size: 60px;
         background-image: url(./assets/tumblr_cf4ec9aeddb626a9c0db48885fe89108_4b7273cd_400.webp);
         background-size: cover;
         background-clip: text;
         position:relative;
-        margin-top:-50px;
-        top:50px;
+        margin-top:50px;
+        top:0px;
         -webkit-background-clip: text;
         color: transparent;
         -webkit-text-stroke: 1px black;
        font-weight:bold; 
        font-style: italic;
+       font-family:phoenix;
        }
        
     
