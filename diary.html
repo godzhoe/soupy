@@ -11,11 +11,27 @@
 
 </head>
 
+<!-- template
+
+    <div id="#" class="post">
+    <p><div class="date"></div><br>
+    <div class="subj">a new soup</div><br>
+    </p>
+    </div>
+
+-->
+
 <body onload="bgen()">
     <div id="main">
        
         <div id="buttoncontainer"><div id="buttons"></div></div>
         <div id="extlinks"><a href="./index.html">home</a> <a href="./lynx.html">links</a></div>
+        <div id="2" class="post">
+            <p><div class="date">jan 4 2023</div><br>
+            <div class="subj">me again</div><br>
+            i'm adding a bunch of stuff to this website. i guess i only have inspiration in the early months of the year lol.<br><br>i can't figure out a consistent theme for this website. maybe it's because all the colors are different? should i all change them to the green?<br><br>my vscode folder is a mess. how do i organize any of this</p>
+            </div>
+
         <div id="1" class="post">
             <p>
             <div class="date">jan 4 2023</div>
@@ -32,7 +48,7 @@
 <script>
     function bgen() {
         const entries = [];
-        
+        entries.push("me again");
         entries.push("a new soup");
         
         var myDiv = document.getElementById("buttons");
