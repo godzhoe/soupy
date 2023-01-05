@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SOUPY</title>
+        <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+        <link rel="stylesheet" href="./font.css">
+        <link rel="stylesheet" href="./music.css">
+        
+      
+      </head>
+<body>
+
+    <!--
+        <li><span class="caret">album : artist</span>
+        <ul class="nested">
+          <li>review review review<br></li>
+          <li><strong>favorite track:</strong></li>
+          <li>download link</li>
+          
+        </ul>
+      </li>  
+    -->
+
+<h2>music</h2>
+<p>my favorite albums<br>(album : artist)</p>
+
+<ul id="myUL">
+  <li><span class="caret">all time favorites</span>
+    <ul class="nested">
+      <li><span class="caret">hospice : the antlers</span>
+        <ul class="nested">
+          <li>i have never cried to an album like i have this one. cancer isn't very prominent in my family, but oh my god, the abuse is protrayed so well. if you're super into liberal feminism i might not recommend because of the misogyny laced in the album, but i think with a bit of tolerance the larger message is so important. before you come at me for this take, i'm a woman, and a lesbian at that.</li>
+          <li><strong>favorite track:</strong> two</li>
+          <li>download link</li>
+        </ul>
+      </li>  
+      <li><span class="caret">bastard : tyler the creator</span>
+        <ul class="nested">
+          <li>i love tyler the creator, there's not much music of his i don't listen to. however, because i mostly listen on spotify, listening to bastard is always a refreshing experience. if you like older tyler's trending audios, such as tron cat, radicals, or yonkers, you'll like bastard. goblin is a more polished version of this album, i think, but i love the messiness of old tyler.<br></li>
+          <li><strong>favorite track:</strong> inglorious</li>
+          <li>download link</li>
+          
+        </ul>
+      </li>  
+    </ul>
+  </li>
+
+  <li><span class="caret">other recommendations</span>
+    <ul class="nested">
+      <li><span class="caret">album</span>
+        <ul class="nested">
+          <li>review review review</li>
+          <li>download link</li>
+          
+        </ul>
+      </li>  
+    </ul>
+  </li>
+  
+</ul>
+<p>always a work in progress, check back for more!<br><a href="./index.html">home</a></p>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>
