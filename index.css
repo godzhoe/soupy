@@ -15,6 +15,13 @@ h1 {
     font-size:20px;
     letter-spacing:0px;
     color:rgb(136, 198, 65);
+    background-image: url(./assets/titlebg.gif);
+background-size: 90%;
+background-position:-30% 50%;
+ background-clip: text;
+
+-webkit-background-clip: text;
+color: transparent;
 }
 
 #ee {
@@ -32,9 +39,9 @@ h1 {
   
   #header{width:25em;
 margin-left:2.5em;}
-  #main {border:1px black dashed;
+  #main {
     width: 300px;
-    height:220px;
+    
     top:-1em;
     font-size:8px;
 
@@ -57,3 +64,5 @@ height:100px ;
 width:275px;
 margin-left:12.5px;
 border:1px dashed rgb(197, 204, 188); }
+
+

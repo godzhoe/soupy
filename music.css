@@ -43,3 +43,48 @@ li {
 .active {
   display: block;
 }
+
+.highlight, a{
+  color:rgb(89, 132, 40);
+  text-decoration:none;
+}
+
+#main {
+  min-width: 100vh;
+  min-height: 100vh;
+  display: float;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow:hidden;
+  
+  
+}
+
+#cont{
+  width:500px;
+  border:3px double black;
+  padding:10px;
+  
+}
+
+::-webkit-scrollbar{
+  width:0;
+}
+#core{
+  max-height:300px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+img{
+  display:float;
+  align-items:left;
+  margin-left:-50px;
+  position:relative;
+  top:50px;
+  margin-top:-50px;
+  width:50px;
+  left:-25px;
+}
