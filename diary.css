@@ -30,7 +30,7 @@ html, body {
     }
 
     .subj::before{
-        content:"subject: ";
+        content:"title: ";
     }
 
     .post{
