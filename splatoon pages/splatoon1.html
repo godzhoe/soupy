@@ -10,5 +10,103 @@
 </head>
 
 <body>
-    <p>lalalala</p>
+    <div id="weapons">
+    <h2>weapons!!</h2>
+    <p>these are the weapons i use the most :) <br>click for overview!<br>
+        <div id="menu">
+    <img src="./weapons/S3_Weapon_Main_.52_Gal_Flat.png" onclick="connect('52gal')"><div class="hoverable">gal</div>
+    <img src="./weapons/S3_Weapon_Main_E-liter_4K_Flat.png" onclick="connect('eliter')"><div class="hoverable">eliter</div>
+    <img src="./weapons/S3_Weapon_Main_Splattershot_Pro_Flat.png" onclick="connect('spro')"><div class="hoverable">spro</div>
+    <img src="./weapons/S3_Weapon_Main_Forge_Splattershot_Pro_Flat.png" onclick="connect('forge')"><div class="hoverable">forge</div>
+    <img src="./weapons/S3_Weapon_Main_Jet_Squelcher_Flat.png" onclick="connect('jet')"><div class="hoverable">jet</div>
+    <img src="./weapons/S3_Weapon_Main_Mini_Splatling_Flat.png" onclick="connect('mini')"><div class="hoverable">mini</div>
+</div>
+    </p>
+<!--
+    <h3>title</h3><br>
+    <strong>class:</strong> <br><br>
+    <strong>sub:</strong> <br><br>
+    <strong>special:</strong> <br><br><br>
+    reviewvreviewreview<br><br>
+    <strong>recommended abilities:</strong> <span class="able"> </span>
+-->
+    <div id="52gal" class="post">
+        <p><h3>.52 gal</h3><br>
+            <strong>class:</strong> shooter<br><br>
+            <strong>sub:</strong> splash wall<br><br>
+            <strong>special:</strong> killer wail 5.1<br><br><br>
+            reviewvreviewreview<br><br>
+            <strong>recommended abilities:</strong><span class="able"><img src="./ability/120px-S3_Ability_Swim_Speed_Up.png"><img src="./ability/120px-S3_Ability_Intensify_Action.png"><img src="./ability/120px-S3_Ability_Sub_Resistance_Up.png"><img src="./ability/120px-S3_Ability_Ink_Resistance_Up.png"></span></p></div>
+    </div>
+    <div id="eliter" class="post">
+        <p><h3>e-liter 4k</h3><br>
+            <strong>class:</strong> charger<br><br>
+            <strong>sub:</strong> ink mine<br><br>
+            <strong>special:</strong> wave breaker<br><br><br>
+            reviewvreviewreview<br><br>
+            <strong>recommended abilities:</strong> <span class="able"><img src="./ability/120px-S3_Ability_Last-Ditch_Effort.png"><img src="./ability/120px-S3_Ability_Object_Shredder.png"><img src="./ability/120px-S3_Ability_Respawn_Punisher.png"><img src="./ability/120px-S3_Ability_Ink_Saver_(Main).png"></span></p></div>
+    </div>
+    <div id="forge" class="post">
+        <p>
+            <h3>forge splattershot pro</h3><br>
+    <strong>class:</strong> shooter<br><br>
+    <strong>sub:</strong> suction bomb<br><br>
+    <strong>special:</strong> booyah bomb<br><br><br>
+    reviewvreviewreview<br><br>
+    <strong>recommended abilities:</strong> <span class="able"><img src="./ability/120px-S3_Ability_Swim_Speed_Up.png"><img src="./ability/120px-S3_Ability_Stealth_Jump.png"><img src="./ability/120px-S3_Ability_Special_Charge_Up.png"><img src="./ability/120px-S3_Ability_Intensify_Action.png"></span>
+
+        </p></div>
+    </div>
+    <div id="spro" class="post">
+        <p>
+            <h3>splattershot pro</h3><br>
+    <strong>class:</strong> shooter<br><br>
+    <strong>sub:</strong> angle shooter<br><br>
+    <strong>special:</strong> crab tank<br><br><br>
+    reviewvreviewreview<br><br>
+    <strong>recommended abilities:</strong> <span class="able"><img src="./ability/120px-S3_Ability_Ink_Saver_(Main).png"><img src="./ability/120px-S3_Ability_Special_Power_Up.png"><img src="./ability/120px-S3_Ability_Intensify_Action.png"><img src="./ability/120px-S3_Ability_Sub_Resistance_Up.png"></span>
+        </p></div>
+    </div>
+    <div id="jet" class="post">
+        <p>
+            <h3>jet squelcher</h3><br>
+    <strong>class:</strong> shooter<br><br>
+    <strong>sub:</strong> angle shooter<br><br>
+    <strong>special:</strong> ink vac<br><br><br>
+    reviewvreviewreview<br><br>
+    <strong>recommended abilities:</strong> <span class="able"><img src="./ability/120px-S3_Ability_Special_Charge_Up.png"><img src="./ability/120px-S3_Ability_Quick_Super_Jump.png"><img src="./ability/120px-S3_Ability_Object_Shredder.png"><img src="./ability/120px-S3_Ability_Thermal_Ink.png"></span>
+        </p></div>
+    </div>
+    <div id="mini" class="post">
+        <p>
+            <h3>mini splatling</h3><br>
+    <strong>class:</strong> splatling<br><br>
+    <strong>sub:</strong> burst bomb<br><br>
+    <strong>special:</strong> ultra stamp<br><br><br>
+    reviewvreviewreview<br><br>
+    <strong>recommended abilities:</strong> <span class="able"><img src="./ability/120px-S3_Ability_Run_Speed_Up.png"><img src="./ability/120px-S3_Ability_Intensify_Action.png"><img src="./ability/120px-S3_Ability_Swim_Speed_Up.png"><img src="./ability/120px-S3_Ability_Sub_Power_Up.png"></span>
+        </p></div>
+    </div>
+   
+    <script>
+        function connect(entry) {
+        var i, post, g;
+        post = document.getElementsByClassName("post");
+        activity = document.getElementsByClassName("active");
+        for (i = 0; i < post.length; i++) {
+            post[i].style.display = "none";
+        }
+        if(event.currentTarget.className != "active"){
+            document.getElementById(entry).style.display = "block";
+            for(g = 0; g < activity.length; g++){
+                activity[g].className="";
+            }
+            event.currentTarget.className = "active";
+        }
+        else{
+        document.getElementById(entry).style.display = "none";
+        event.currentTarget.className = "";
+        }
+    }
+    </script>
 </body>
