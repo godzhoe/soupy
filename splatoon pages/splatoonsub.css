@@ -12,16 +12,18 @@ body {
 }
 
 #weapons img{
-    width:50px;
+    width:65px;
     opacity:100%;
 }
 
 #weapons img:hover{
     cursor:pointer;
-    opacity:75%;
+   
+    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(0 -1px 0 white) drop-shadow(1px 0 white);
 }
 .active{
-    opacity:25% !important;
+   
+    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(0 -1px 0 white) drop-shadow(1px 0 white);
 }
 .post {
     display:none;
@@ -68,3 +70,8 @@ h3{
 #title{
     margin-top:13px;
 }
+
+::selection{
+    color:black;
+    background-color:#FA7042;
+    }

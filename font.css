@@ -2,3 +2,9 @@
     font-family:'sperrypg'; src: url("./Web437_SperryPC_CGA.woff") format("woff");}
     @font-face {
     font-family:'phoenix'; src: url("./Web437_PhoenixVGA_8x8.woff") format("woff"); }
+
+::selection {
+        color: white;
+        background-color: black;
+    }
+    
