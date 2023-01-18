@@ -26,6 +26,11 @@
        
         <div id="buttoncontainer"><div id="buttons"></div></div>
         <div id="extlinks"><a href="./index.html">home</a> <a href="./lynx.html">links</a> <a href="./music.html">music</a></div>
+        <div id="10" class="post">
+            <p><div class="date">jan 18 2023</div><br>
+            <div class="subj">nationalism in wwi</div><br>
+            studying for midterms is <em>actually</em> sucking the life out of me. all i can think about is how i can't wait for university.<br>i made a cohost! <a href="https://cohost.org/ladle">i don't really know what to do with it..</a></p>
+            </div>
         <div id="9" class="post">
             <p><div class="date">jan 14 2023</div><br>
             <div class="subj">nvm</div><br>
@@ -93,6 +98,8 @@
 <script>
     function bgen() {
         const entries = [];
+        //subjects
+        entries.push("nationalism in wwi");
         entries.push("nvm");
         entries.push("ehhhhhh");
         entries.push("&");
@@ -102,7 +109,7 @@
         entries.push("untitled");
         entries.push("me again");
         entries.push("a new soup");
-        
+        //end
         var myDiv = document.getElementById("buttons");
         var docFrag = document.createDocumentFragment();
         for (var i = 0; i < entries.length; i++) {
