@@ -92,9 +92,60 @@
     </div>
    <div id="clothing">
     <h2>clothes</h2>
-    <p>these are the clothes i have created so far, with details on what i use them for. most are pures, because i like pures.</p>
+    <p>all the gear i have so far as well as random clothes i like. <br>most are pures, because i like pures.<br><br><span id="clothenter" onclick="clothenter()"><strong>enter!</strong></span></p>
+    <div id="clothtainer"><div id="innerclothtainer">
+    <div class="cloth"><img src="./clothes/S3_Gear_Headgear_Bream-Brim_Cap.png"><p><strong>bream brim cap</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Headgear_Retro_BluFocals.png"><p><strong>retro blufocals</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Headgear_Retro_Framers.png"><p><strong>retro framers</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Headgear_Wharfside_Cap.png"><p><strong>wharfside cap</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Clothing_Annaki_Drive_Tee.png"><p><strong>annaki drive tee</strong><br>words words words words words <br>words words words words<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Clothing_Annaki_Flannel_Hoodie.png"><p><strong>annaki flannel hoodie</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Clothing_Dusty_Field_Jacket.png"><p><strong>dusty field jacket</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Clothing_Ink-Black_Tangle_Top.png"><p><strong>ink-black tangle top</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Clothing_Moby_Knit.png"><p><strong>moby knit</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Clothing_School_Cardigan_B.png"><p><strong>school cardigan (b)</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Shoes_Arctic_Duck_Boots.png"><p><strong>arctic duck boots</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Shoes_Black_Flip-Flops.png"><p><strong>black flip-flops</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Shoes_Punk_Nights.png"><p><strong>punk nights</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Shoes_Skipjack_Work_Boots.png"><p><strong>slipjack work boots</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Shoes_Suede_Basics.png"><p><strong>suede basics</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+    <div class="cloth"><img src="./clothes/S3_Gear_Shoes_Tan_Work_Boots.png"><p><strong>tan work boots</strong><br>blah blah blah<br><span class="abilchunks"><img src="./ability/"><img src="./ability/"><img src="./ability/"><img src="./ability/"></span></p></div>
+</div></div>
    </div>
     <script>
+        document.getElementById("clothing").addEventListener("load", compress());
+        
+
+        function clothenter(){
+            var i, cloth;
+            cloth = document.getElementsByClassName("cloth");
+            if(event.currentTarget.className != "qnon"){
+            for(i = 0; i < cloth.length; i++){
+                cloth[i].style.display = "block";
+            }
+            event.currentTarget.className = "qnon";
+            event.currentTarget.innerHTML="<strong>exit!</strong>";
+            }
+            else{
+                for(i = 0; i < cloth.length; i++){
+                cloth[i].style.display = "none";
+            }
+            event.currentTarget.className = "";
+            event.currentTarget.innerHTML="<strong>enter!</strong>";
+            }
+        }
+
+        function compress(){
+            var i, cloth;
+            cloth = document.getElementsByClassName("cloth");
+            
+            for(i = 0; i < cloth.length; i++){
+               
+                cloth[i].style.top = (-65 * i) + "px";
+                
+            }
+        }
+
         function connect(entry) {
         var i, post, g;
         post = document.getElementsByClassName("post");

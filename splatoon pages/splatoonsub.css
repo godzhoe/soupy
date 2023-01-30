@@ -75,3 +75,47 @@ h3{
     color:black;
     background-color:#FA7042;
     }
+#clothing{
+    width:500px;
+    margin-left:-8px;
+    overflow:hidden;
+    text-align:center;
+    
+   
+   
+}
+
+#clothenter{
+    cursor: pointer;
+}
+
+#clothenter:hover{
+    
+    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(0 -1px 0 white) drop-shadow(1px 0 white);
+}
+
+.cloth img:first-child{height:75px; margin-left:-200px;}
+.cloth p{ position:relative; top:-85px; left:100px; width:325px; overflow:hidden;}
+.abilchunks img:first-child{height:35px;}
+.abilchunks img{height:25px; position:relative; left:140px;}
+
+.cloth{position:relative; left:25px; display:none; }
+.cloth:first-of-type{top:0px; }
+
+::-webkit-scrollbar{
+    width:0;
+}
+#innerclothtainer{
+    max-height:1360px;
+    
+    overflow:hidden;
+}
+
+#clothtainer{
+    max-height:200px;
+    overflow-y:scroll;
+    width:400px;
+    align-self:center;
+    margin-left:25px;
+    
+}
