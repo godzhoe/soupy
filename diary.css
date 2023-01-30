@@ -78,6 +78,21 @@ html, body {
         
     }
 
+    #scroll{
+        position:fixed;
+        font-family:sperrypg;
+        font-size:8px;
+        margin-left:580px;
+        animation:hi 1.5s ease infinite;
+    }
+ 
+  
+  @keyframes hi{
+    0% { margin-top:315px;}
+    50% { margin-top:312px;}
+    100% { margin-top:315px;}
+  }
+
     .post{
         font-family:sperrypg;
         font-size:8px;

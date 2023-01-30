@@ -106,6 +106,7 @@
             hellooo!!! hopefully this diary lasts longer than the last one.<br>for this diary, i created a more streamlined <a href="https://codepen.io/tubbox/pen/XWBjyQm">entry addition tool</a> that will prevent me from iframe hell. <br><br>about me....i am almost done with high school! i have an acceptance into university for data science, and i am very excited to attend. i've been listing off things that i won't miss when i go to university.<br><br>super firewalled wifi<br>people i've known for ever<br>weirdly timed midterms...<br>uniforms! oh my god<br>the long commute by car<br>low amount of resources for STEM.<br><br>and there's a lot more but i can't list them all. well! thank you for reading. this is more of a test entry than anything :)</p>
             
         </div>
+        <div id="scroll">↓</div>
    
 </body>
 
@@ -149,13 +150,26 @@
 
   
 
-    function connect(entry) {
-        var i, post;
-        post = document.getElementsByClassName("post");
-        for (i = 0; i < post.length; i++) {
-            post[i].style.display = "none";
-        }
-        document.getElementById(entry).style.display = "block";
-        event.currentTarget.className += " active";
-    }
+    
+function connect(entry) {
+  var i, post;
+  post = document.getElementsByClassName("post");
+  for (i = 0; i < post.length; i++) {
+    post[i].style.display = "none";
+  }
+  document.getElementById(entry).style.display = "block";
+  event.currentTarget.className += " active";
+  var div = document.getElementById(entry);
+
+  var hasHorizontalScrollbar = div.scrollWidth > div.clientWidth;
+  var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
+  var scroll =  document.getElementById("scroll");
+  if(hasVerticalScrollbar == true){
+   scroll.style.display = "block";
+  }
+  else{
+   scroll.style.display = "none";
+  }
+}
+
 </script>
