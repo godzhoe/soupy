@@ -99,23 +99,38 @@ h3{
 .abilchunks img:first-child{height:35px;}
 .abilchunks img{height:25px; position:relative; left:140px;}
 
-.cloth{position:relative; left:25px; display:none; }
-.cloth:first-of-type{top:0px; }
+.cloth{position:relative; display:none;}
+
 
 ::-webkit-scrollbar{
     width:0;
 }
 #innerclothtainer{
-    max-height:1360px;
+    max-height:850px;
     
     overflow:hidden;
 }
 
 #clothtainer{
-    max-height:200px;
-    overflow-y:scroll;
-    width:400px;
-    align-self:center;
-    margin-left:25px;
+    position:relative;
+    left:12px;
+    width:500px;
+    margin:auto;
+    overflow-x:hidden;
     
+    
+    
+}
+
+#stats a{
+    color:white;
+    
+}
+
+#stats{
+    line-height:12px;
+}
+
+#stats a:hover{
+    text-decoration:none;
 }
