@@ -51,10 +51,14 @@ button:hover::after{
     color:#a3302c;
 }
 
-.active{
+.active, a{
     color:#a3302c;
+    text-decoration:none;
 }
 
+a:hover{
+    text-decoration:underline;
+}
 .pink{
     color:rgb(158, 66, 66);
 }
