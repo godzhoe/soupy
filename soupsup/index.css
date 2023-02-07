@@ -41,15 +41,7 @@ button:hover{
     
 }
 
-button:hover::before{
-    content:"-";
-    color:#a3302c;
-}
 
-button:hover::after{
-    content:"-";
-    color:#a3302c;
-}
 
 .active, a{
     color:#a3302c;
