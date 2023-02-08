@@ -3,6 +3,14 @@ body{
     font-family:sperrypg;
     font-size:8px;
     letter-spacing:-1px;
+    scrollbar-width:none;
+    -ms-overflow-style:none !important;
+}
+::scrollbar{
+display:none !important;
+}
+::-webkit-scrollbar{
+display:none !important;
 }
 
 ul, #myUL {
@@ -70,9 +78,7 @@ li {
 }
 
 
-::-webkit-scrollbar{
-  width:0;
-}
+
 #core{
   max-height:300px;
   

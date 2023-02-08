@@ -10,11 +10,12 @@
     
 body{
     scrollbar-width:none;
+    -ms-overflow-style:none !important;
 }
 ::scrollbar{
-width:0;
+display:none !important;
 }
 ::-webkit-scrollbar{
-width:0;
+display:none !important;
 }
 
