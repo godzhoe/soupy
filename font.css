@@ -8,10 +8,7 @@
         background-color: black;
     }
     
-body{
-    scrollbar-width:none;
-    -ms-overflow-style:none !important;
-}
+
 ::scrollbar{
 display:none !important;
 }
