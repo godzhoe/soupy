@@ -16,3 +16,30 @@ display:none !important;
 display:none !important;
 }
 
+body{
+    font-family:sperrypg;
+    font-size:9px;
+    line-height:13px;
+    letter-spacing:-1px;
+}
+
+a {
+    text-decoration:none;
+    color:rgb(89, 132, 40);
+}
+
+#note{
+    font-size:7px;
+    position:relative;
+    top:-5px;
+
+}
+
+h1,h2,h3{
+    font-family:phoenix;  letter-spacing:0px;
+    
+}
+
+h1{font-size:20px;
+    line-height:20px;
+    letter-spacing:0px;}

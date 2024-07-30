@@ -1,0 +1,103 @@
+/* fool lovers frame08-a (modified)*/
+.box08a { 
+    margin-top:32px;
+    width:80%
+    }
+    .u0108a {
+    background:url(./frames/fool-lovers-frame08-a/f-ue.gif) repeat-x;
+    height:32px;
+    margin:0 32px
+    }
+    .s0108a {
+    background:url(./frames/fool-lovers-frame08-a/f-sita.gif) repeat-x;
+    height:32px;
+    margin:0 32px
+    }
+    .box-top08a {
+    background-image:url(./frames/fool-lovers-frame08-a/f-kado1.gif), url(./frames/fool-lovers-frame08-a/f-kado2.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:32px;
+    margin:-12px 0
+    }
+    .box-center08a {
+    background-image:url(./frames/fool-lovers-frame08-a/f-migi.gif), url(./frames/fool-lovers-frame08-a/f-hidari.gif);
+    background-position:top right, top left;
+    background-repeat:repeat-y, repeat-y;
+    height:112px;
+    }
+    .box-inner08a {
+    background:#fff; 
+    margin:0 32px;
+    position:relative;
+    top:-4px;
+    }
+    .box-bottom08a {
+    background-image:url(./frames/fool-lovers-frame08-a/f-kado3.gif), url(./frames/fool-lovers-frame08-a/f-kado4.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:32px
+    }
+
+/* fool lovers frame15-a*/
+.box15a{
+    margin:1em 0; 
+    width:80% 
+    }
+    .u0115a,.s0115a{
+    background:url(./frames/fool-lovers-frame15-a/f-yoko.gif) repeat-x;
+    height:25px;
+    margin:0 32px
+    }
+    .box-top15a{
+    background-image:url(./frames/fool-lovers-frame15-a/f-kado1.gif), url(./frames/fool-lovers-frame15-a/f-kado2.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:25px
+    }
+    .box-center15a{
+    background-image:url(./frames/fool-lovers-frame15-a/f-tate.gif), url(./frames/fool-lovers-frame15-a/f-tate.gif);
+    background-position:top right, top left;
+    background-repeat:repeat-y, repeat-y;
+    padding:5px 32px
+    }
+    .box-bottom15a{
+    background-image:url(./frames/fool-lovers-frame15-a/f-kado3.gif), url(./frames/fool-lovers-frame15-a/f-kado4.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:25px
+    }
+
+/* fool lovers frame16-b*/
+.box16b{
+    margin:1em 0; 
+    width:80% 
+    }
+    .u0116b{
+    background:url(./frames/fool-lovers-frame16-b/f-ue.gif) repeat-x;
+    height:37px;
+    margin:0 21px
+    }
+    .s0116b{
+    background:url(./frames/fool-lovers-frame16-b/f-sita.gif) repeat-x;
+    height:37px;
+    margin:0 21px
+    }
+    .box-top16b{
+    background-image:url(./frames/fool-lovers-frame16-b/f-kado1.gif), url(./frames/fool-lovers-frame16-b/f-kado2.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:37px
+    }
+    .box-center16b{
+    background-image:url(./frames/fool-lovers-frame16-b/f-migi.gif), url(./frames/fool-lovers-frame16-b/f-hidari.gif);
+    background-position:top right, top left;
+    background-repeat:repeat-y, repeat-y;
+    padding:10px 31px
+    }
+    .box-bottom16b{
+    background-image:url(./frames/fool-lovers-frame16-b/f-kado3.gif), url(./frames/fool-lovers-frame16-b/f-kado4.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:37px
+    }

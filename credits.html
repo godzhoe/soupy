@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SOUPY</title>
+        <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+        <link rel="stylesheet" href="./assets/font.css">
+        <link rel="stylesheet" href="./assets/credits.css">
+        
+      
+      </head>
+<body>
+<div id="main">
+ 
+  <div id="cont">
+
+<div id="header"><h1> credits </h1>
+<p>these are credits for all the assets i used. the coding for this site is ~generally~ my own.</p></div>
+
+<div id="core">
+
+<ul id="myUL">
+  <li><span class="caret">sitewide</span>
+    <ul class="nested">
+        <li><span class="caret">fonts</span>
+            <ul class="nested">
+              <li>sperrypc cga 8x8 <span id="note">* main font</span> -- <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?phoenixvga_8x8">int10h</a> </li>
+              <li>pheeonix vga 8x8 <span id="note">* header font</span> -- <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?phoenixvga_8x8">int10h</a></li>
+            </ul>
+          </li>
+    </ul>
+</li>
+<li><span class="caret">index.html</span>
+    <ul class="nested">
+      <li><span class="caret">frames</span>
+        <ul class="nested">
+          <li>frame 08-a -- <a href="https://foollovers.com/mat/t-frame08.html">fool lovers</a></li>  
+        </ul>
+      </li>
+        <li><span class="caret">images</span>
+            <ul class="nested">
+              <li>sunflowers -- <a href="https://foollovers.com/mat/i-s-sm19.html">fool lovers</a></li>  
+            </ul>
+          </li>
+    </ul>
+</li>
+
+</ul>
+</div>
+<div id="footer"><p><a href="./index.html">index</p></div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+</div></div>
+</body>
+</html>

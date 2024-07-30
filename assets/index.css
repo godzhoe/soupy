@@ -1,0 +1,60 @@
+h1 {
+  color: rgb(136, 198, 65);
+  background-image: url(./titlebg.gif);
+  background-size: 90%;
+  background-position: -30% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.tablebody {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#ee {
+  min-width: 100vh;
+  min-height: 100vh;
+  display: float;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  margin-top: -5em;
+
+}
+
+#lynx {
+  width: 200px;
+  padding-left: 20px;
+}
+
+#main {
+  width: 600px;
+  position: relative;
+  text-align: center;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+#sunflower01 {
+  position: absolute;
+  top: 160px;
+  right: 195px;
+}
+
+#sunflower02 {
+  position: absolute;
+  top: 160px;
+  right: 20px;
+}
