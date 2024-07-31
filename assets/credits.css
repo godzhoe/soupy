@@ -69,7 +69,7 @@ li {
 }
 
 #cont{
-  width:700px;
+  max-width:900px;
  
   padding:10px;
   
@@ -78,7 +78,7 @@ li {
 
 
 #core{
-  max-height:300px;
+
   
   overflow-x:hidden;
   overflow-y:scroll;
