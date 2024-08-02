@@ -1,4 +1,4 @@
-/* fool lovers frame08-a (modified)*/
+/* fool lovers frame08-a (modified) (index.html)*/
 .box08a { 
     margin-top:32px;
     width:80%
@@ -33,6 +33,84 @@
     top:-4px;
     }
     .box-bottom08a {
+    background-image:url(./frames/fool-lovers-frame08-a/f-kado3.gif), url(./frames/fool-lovers-frame08-a/f-kado4.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:32px
+    }
+
+/* fool lovers frame08-a (modified) (about.html)*/
+.box08ab {
+    margin:1em 0; /* 中央寄せは0をautoに変更 */
+    width:640px;
+    }
+    .u0108ab {
+    background:url(./frames/fool-lovers-frame08-a/f-ue.gif) repeat-x;
+    height:32px;
+    margin:0 32px
+    }
+    .s0108ab {
+    background:url(./frames/fool-lovers-frame08-a/f-sita.gif) repeat-x;
+    height:32px;
+    margin:0 32px
+    }
+    .box-top08ab {
+    background-image:url(./frames/fool-lovers-frame08-a/f-kado1.gif), url(./frames/fool-lovers-frame08-a/f-kado2.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:32px
+    }
+    .box-center08ab {
+    background-image:url(./frames/fool-lovers-frame08-a/f-migi.gif), url(./frames/fool-lovers-frame08-a/f-hidari.gif);
+    background-position:top right, top left;
+    background-repeat:repeat-y, repeat-y;
+    height:400px;
+    }
+    .box-inner08ab {
+    background:#fff; /* 背景色 */
+    margin:0 32px
+    }
+    .box-bottom08ab {
+    background-image:url(./frames/fool-lovers-frame08-a/f-kado3.gif), url(./frames/fool-lovers-frame08-a/f-kado4.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:32px
+    }
+
+/* fool lovers frame08-a (modified) (journal.html)*/
+.box08ac {
+    margin:1em 0; /* 中央寄せは0をautoに変更 */
+    width:240px;
+    }
+    .u0108ac {
+    background:url(./frames/fool-lovers-frame08-a/f-ue.gif) repeat-x;
+    height:32px;
+    margin:0 32px
+    }
+    .s0108ac {
+    background:url(./frames/fool-lovers-frame08-a/f-sita.gif) repeat-x;
+    height:32px;
+    margin:0 32px
+    }
+    .box-top08ac {
+    background-image:url(./frames/fool-lovers-frame08-a/f-kado1.gif), url(./frames/fool-lovers-frame08-a/f-kado2.gif);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:32px;
+
+    }
+    .box-center08ac {
+    background-image:url(./frames/fool-lovers-frame08-a/f-migi.gif), url(./frames/fool-lovers-frame08-a/f-hidari.gif);
+    background-position:top right, top left;
+    background-repeat:repeat-y, repeat-y;
+    height:208px;
+    overflow-y:scroll;
+    }
+    .box-inner08ac {
+    background:#fff; /* 背景色 */
+    margin:0 32px
+    }
+    .box-bottom08ac {
     background-image:url(./frames/fool-lovers-frame08-a/f-kado3.gif), url(./frames/fool-lovers-frame08-a/f-kado4.gif);
     background-position:top left, top right;
     background-repeat:no-repeat, no-repeat;

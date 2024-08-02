@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOUPY</title>
+    <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/frames.css">
+    <link rel="stylesheet" href="./assets/font.css">
+    <link rel="stylesheet" href="./assets/journal.css">
+
+
+</head>
+
+<!-- template
+
+    <div id="#" class="post">
+    <p><img src="./assets/pictures/pixelplant1anim.gif" class="postimg"> //needs to be hardcoded :/ sorry future me
+    <div class="date"></div><br>
+    <div class="subj">a new soup</div><br>
+    </p>
+    </div>
+
+-->
+
+<body onload="bgen()">
+    <div id="main">
+        <table>
+            <tr>
+                <td>
+                    <div class="box08ac">
+                        <div class="box-top08ac">
+                          <div class="u0108ac"></div>
+                        </div>
+                        <div class="box-center08ac">
+                          <div class="box-inner08ac">
+                    <div id="buttoncontainer"><p style="text-align:center;"><img src="./assets/pictures/lacroixsunflower.gif"></p>
+                        <h3>soup's journal</h3><span id="nextprevbuttons"><button onclick="nextpage()">next</button><button onclick="prevpage()">prev</button> <div id="pagenum"></div></span><p style="text-align:center;"><img src="assets/pictures/sadthemes-strawberry2.gif"></p>
+                        <li><span class="caret">all entries</span>
+                            <ul class="nested">
+                                <div id="buttonlistcontainer">
+                                    <li>
+                                        <div id="buttons"></div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        </ul>
+                        </li>
+                    </div>   </div>
+                </div>
+                <div class="box-bottom08ac">
+                  <div class="s0108ac"></div>
+                </div>
+                </td>
+                <td>
+                    
+                    <div id="1" class="post">
+                        <p><img src="./assets/pictures/pixelplant1anim.gif" class="postimg1">
+                        <div class="date">august 2nd, 2024</div><br>
+                        <div class="subj">introduction</div><br>
+                        hi! this is my journal, restarted for the third time. woohoo! will i write here? probably not. is it more about javascript programming than the actual function? yeah a lil lol.<br><br>i feel like i'm breaking some sort of unspoken rule by putting javascript on my page, but it's not serverside, y'know? i'm not holding any cookies or anything, it's just for display purposes. you can believe me, or you can find my repo for this website and look for yourself! but the only way to win in life is to not hardcode things :P i tried something else earlier involving loading the buttons on my about page, but anything efficent is serverside which makes me sad. github pages doesn't allow php! :o so perhaps i'll have to find a better server host if i want to do better organization. or i can be lazy, and stick to hardcoding. <br><br>recently ive been SUPER into tables. well if you know anything about my programming, i love little containers in the center of the page. idk, they're just so cute. anyway, with tables, its super easy to keep things centered and laid out properly >_< i wish i had known about them when coding for tumblr, it would've made my life so much easier...& yes all of the current pages are based on a table.<br><br>ummmm well idk what else to talk about right now! i want to make a post about xyz crd because i didn't even know it was still around but everywhere i look i go LOL there it is....but for now: the tl;dr about xyz is that i was 16 and ref was 14 when we made that carrd lol. i can do much better now. but yeah i want to make a full post about that.<br><br>ATM, im feeling pretty alright. gf and i r listening to music while he plays sims 4 and i'm working away in my burst of creativity on this site, actively ignoring the math final i have to take next week (OOPS)<br><br>toodles, glad y'all like the site. see everyone next time :3<br><br>-soup</p>
+            
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <div id="extlinks">
+            <!-- <img src="https://moods.imood.com/display/uname-soupy/fg-000000/trans-1/imood.gif" alt="The current mood of soupy at www.imood.com" border="0" height="13px"><br>-->
+           <a href="./index.html">home</a>
+        </div>
+        
+        <div id="scroll">↓</div>
+
+</body>
+
+<script>
+    function bgen() {
+        const entries = [];
+        //subjects
+        entries.push("introduction");
+        //end
+        var myDiv = document.getElementById("buttons");
+        var docFrag = document.createDocumentFragment();
+        for (var i = 0; i < entries.length; i++) {
+            var myDiv = document.getElementById("buttonlistcontainer");
+            var u = entries.length - i;
+            var button = document.createElement('BUTTON');
+            button.setAttribute('name', u);
+            const h = button.name;
+            button.addEventListener("click", function () {
+                connect(h);
+            });
+            var text = document.createTextNode(entries[i]);
+            button.appendChild(text);
+            docFrag.appendChild(button);
+        }
+        docFrag.firstChild.click();
+        myDiv.appendChild(docFrag);
+
+    }
+
+    function connect(entry) {
+        var i, post;
+        post = document.getElementsByClassName("post");
+        for (i = 0; i < post.length; i++) {
+            post[i].style.display = "none";
+            if (post[i].classList.contains("active")) {
+                post[i].classList.remove("active")
+            }
+
+        }
+        document.getElementById(entry).style.display = "block";
+        document.getElementById(entry).className += " active";
+        var div = document.getElementById(entry);
+
+        var hasHorizontalScrollbar = div.scrollWidth > div.clientWidth;
+        var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
+        var scroll = document.getElementById("scroll");
+        if (hasVerticalScrollbar == true) {
+            scroll.style.display = "block";
+        }
+        else {
+            scroll.style.display = "none";
+        }
+
+        post = document.getElementsByClassName("post");
+        currententry = document.getElementsByClassName("active");
+        var v = parseInt(currententry[0].id);
+        var pagenum = document.getElementById("pagenum")
+        pagenum.textContent = "entry: " + v + " / " + post.length
+    }
+
+    function nextpage() {
+        post = document.getElementsByClassName("post");
+        currententry = document.getElementsByClassName("active");
+        var h = parseInt(currententry[0].id);
+        if (h == post.length) {
+            connect(1);
+        }
+        else {
+            connect(h + 1);
+        }
+    }
+    function prevpage() {
+        post = document.getElementsByClassName("post");
+        currententry = document.getElementsByClassName("active");
+        var h = parseInt(currententry[0].id);
+        if (h == 1) {
+            connect(post.length);
+        }
+        else {
+            connect(h - 1);
+        }
+    }
+
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function () {
+            this.parentElement.querySelector(".nested").classList.toggle("activecaret");
+            this.classList.toggle("caret-down");
+        });
+    }
+</script>
