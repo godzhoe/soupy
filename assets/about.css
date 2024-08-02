@@ -12,7 +12,7 @@
 
 
 #tableux {
-    width: 750px;
+    width: 825px;
     height:400px;
 
 
@@ -20,7 +20,7 @@
 
 #stats{height:305px; overflow-y:scroll; width:250px; padding:0 20px 0 20px;}
 #bio {
-
+text-align:center;
     display: block;
     height:  426px;
     overflow-x: hidden;
@@ -28,7 +28,7 @@
     position:relative;
     z-index:1;
     padding:0 20px 0 20px;
-    width:300px;
+    width:375px;
 }
 
 #buttons {
