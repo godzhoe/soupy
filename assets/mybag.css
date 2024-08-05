@@ -1,0 +1,79 @@
+.tooltip {
+  position: absolute;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: gold;
+  border: 1px solid black;
+  text-align: center;
+
+  padding: 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  top:50px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#disclaimer{
+  width:150px;
+  background-color: gold;
+  border: 1px solid black;
+  padding: 5px;
+  text-align:center;
+  margin:20px;
+}
+#bag{
+  position:relative;
+  left:50px;
+}
+#rcafbag {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#perfume {
+  position: absolute;
+  top: 25px;
+  left: 300px;
+}
+#grinder {
+  position: absolute;
+  top: 75px;
+  left: 340px;
+}
+#tampax {
+  position: absolute;
+  top: 150px;
+  left: 275px;
+}
+#laptop {
+  position: absolute;
+  top: 275px;
+  left: 50px;
+}
+#pocketknife {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+}
+#airtag {
+  position: absolute;
+  top: 235px;
+  left: 170px;
+}
+
+
+img:hover{
+  transform:scale(1.05);
+  z-index:999;
+}

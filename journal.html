@@ -35,7 +35,7 @@
                         <div class="box-center08ac">
                           <div class="box-inner08ac">
                     <div id="buttoncontainer"><p style="text-align:center;"><img src="./assets/pictures/lacroixsunflower.gif"></p>
-                        <h3>soup's journal</h3><span id="nextprevbuttons"><button onclick="nextpage()">next</button><button onclick="prevpage()">prev</button> <div id="pagenum"></div></span><p style="text-align:center;"><img src="assets/pictures/sadthemes-strawberry2.gif"></p>
+                        <h3>soup's journal</h3><span id="nextprevbuttons"><button onclick="nextpage()">next</button><button onclick="prevpage()">prev</button></span> <p id="pagenum">hi</p><p style="text-align:center;"><img src="assets/pictures/sadthemes-strawberry2.gif"></p>
                         <li><span class="caret">all entries</span>
                             <ul class="nested">
                                 <div id="buttonlistcontainer">
@@ -54,6 +54,12 @@
                 </div>
                 </td>
                 <td>
+                    <div id="2" class="post">
+                        <p><img src="./assets/pictures/pixelplant2anim.gif" class="postimg2"> 
+                        <div class="date">august 5th, 2024</div><br>
+                        <div class="subj">ripping hair out</div><br>
+                        hi, me again.<br><br>a lot of things to write here: currently, i'm working on a what's-in-my-bag and a separate weed page. both of these things need a lot of assets for my vision which feel hard to find. i'm just trying to find some pixel notepad or something for a log about all the amazing wonderful weed i've smoked, but idk, maybe i'll have to make it myself loooooool. look, i draw for fun, and i love art and music and all of that, but i'm not a good artist. idky, there is just something within me that makes it pretty impossible to be creative. i've been drawing a long time, maybe a decade now, but i dropped it for a while. then i got an ipad and procreate and procreate is <em>fine</em> but let's not kid ourselves it could be better. but i know it's a skill issue.<br><br>speaking of weed, i'm throwing myself into a break because i have wisdom tooth surgery in about a week and a half. everyone is like "stop smoking weed before surgery!!!" so here i am. and that's stressing me out a little...obviously detoxing from weed isn't like an actual opioid withdrawl that has me shitting and puking at the same time (real thing that happens!) but it's stressful, emotionally. not to mention i'm pretty scared of the wisdom tooth removal in its own way. i don't like thinking about the iv they're going to stick in me... but at least after then i never have to think about them again and soon enough i can start partaking in some gardening again.<br><br>i've actually been sticking to only flower instead of carts and that alone has been doing a lot of good for me, mentally. even medically licensed thc carts are just so accessible that the constant weed-fog is hard to resist, but smoking out of a bong in a way that won't leave a smell takes a lot more effort for just one hit. because of this, my tolerance has plummeted a lot which makes me very happy because i do not have the money to keep up a cart addiction.<br><br>today i: sorted out some clothes to sell, washed two loads of said clothes, created a cheat sheet for my math final, applied for a job (wow!) and now i'm writing here. it's 3pm now and i've been running around the house since like 8am, but in list form i guess i actually haven't done a lot. i suppose with my adhd even doing something is enough to impress myself.<br><br>college starts 3 weeks from today which is awesome i actually can't wait to go back. this year i have a single dorm so i can really be a slob and no one will even know. but yeah, that wisdom tooth recovery time makes me anxious, hopefully i'll be back on my feet by moving time. it's just...august is always stressful. so maybe not the greatest time to reboot my site, but is it ever? i feel like no matter what i always end up forgetting about this place even if the files sit on my desktop and i have bookmarks on my browser. adhd really is impossible to work with.<br><br>anyway, expect more from this site soon, since i still have ideas. website is cancelled. i need some time to relax and bounce on dick. i'll release new pages when i feel like it .....<br><br>-soup </p>
+                        </div>
                     
                     <div id="1" class="post">
                         <p><img src="./assets/pictures/pixelplant1anim.gif" class="postimg1">
@@ -78,6 +84,7 @@
     function bgen() {
         const entries = [];
         //subjects
+        entries.push("ripping hair out");
         entries.push("introduction");
         //end
         var myDiv = document.getElementById("buttons");
@@ -113,16 +120,6 @@
         document.getElementById(entry).style.display = "block";
         document.getElementById(entry).className += " active";
         var div = document.getElementById(entry);
-
-        var hasHorizontalScrollbar = div.scrollWidth > div.clientWidth;
-        var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
-        var scroll = document.getElementById("scroll");
-        if (hasVerticalScrollbar == true) {
-            scroll.style.display = "block";
-        }
-        else {
-            scroll.style.display = "none";
-        }
 
         post = document.getElementsByClassName("post");
         currententry = document.getElementsByClassName("active");

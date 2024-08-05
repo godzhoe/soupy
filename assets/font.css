@@ -28,6 +28,11 @@ a {
     color:rgb(89, 132, 40);
 }
 
+a:hover, button:hover{
+    text-transform:uppercase;
+    text-decoration:black dotted underline;
+}
+
 #note{
     font-size:7px;
     position:relative;

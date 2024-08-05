@@ -1,0 +1,35 @@
+#main {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: float;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    margin-top: -5em;
+
+}
+
+table {
+    width: 750px;
+}
+
+#primary {
+    width: 450px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+#header {
+    text-align: center;
+}
+
+#journal{height:400px;}
+
+table, tr, td {
+    border: 1px dotted black;
+}

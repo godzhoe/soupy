@@ -28,12 +28,12 @@ h1 {
 }
 
 #lynx {
-  width: 200px;
+  width: 300px;
   padding-left: 20px;
 }
 
 #main {
-  width: 600px;
+  width: 750px;
   position: relative;
   text-align: center;
   -ms-overflow-style: none;
@@ -50,14 +50,14 @@ h1 {
 
 #sunflower01 {
   position: absolute;
-  top: 160px;
-  right: 195px;
+  top: 130px;
+  right: 285px;
 }
 
 #sunflower02 {
   position: absolute;
-  top: 160px;
-  right: 20px;
+  top: 130px;
+  right: 50px;
 }
 
 #subtable{
