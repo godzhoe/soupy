@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOUPY</title>
+    <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/font.css">
+    <link rel="stylesheet" href="./assets/frames.css">
+    <link rel="stylesheet" href="./assets/resources.css">
+
+
+</head>
+
+<body>
+    <div id="main">
+        <table>
+            <tr>
+                <td><img src="./assets/pictures/fae_vill.gif"><br>the great soupy online links hub!<br><br>directories: 1<br>material: 4<br>fonts: 0<br>tools: 0<br>info/reading: 0<br>music: 0<br>social: 0<br>fun: 0<br>etc: 0<br><br>total: 5<br><br><img src="./assets/pictures/star-kaif06.gif"> indicates a personal fave<br><img src="./assets/pictures/aifutaba_f01.gif"> indicates an archived website<br><br><a href="./index.html">home</a></td>
+                <td id="lynx">
+                    <ul id="myUL">
+                        <li><span class="caret">directories</span>
+                            <ul class="nested">
+                                <li><img src="./assets/pictures/star-kaif06.gif"> <a href="https://directory.cinni.net/">ichigo</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">material</span>
+                            <ul class="nested">
+                                <li><img src="./assets/pictures/star-kaif06.gif"> <a href="https://foollovers.com/mat/index.html">fool lovers</a></li>
+                                <li><img src="./assets/pictures/star-kaif06.gif"> <a href="http://frank-web.net/item/index.htm">frank-web</a></li>
+                                <li><img src="./assets/pictures/aifutaba_f01.gif"> <a href="https://web.archive.org/web/20100611204041/http://neskaya.net/">neskaya</a></li>
+                                <li><img src="./assets/pictures/star-kaif06.gif"> <a href="http://artwork.neocities.org/graphics">artwork</a></a></li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">fonts</span>
+                            <ul class="nested">
+                              
+                            </ul>
+                        </li>
+                        <li><span class="caret">info/reading</span>
+                            <ul class="nested">
+                              
+                            </ul>
+                        </li>
+                        <li><span class="caret">music</span>
+                            <ul class="nested">
+                              
+                            </ul>
+                        </li>
+                        <li><span class="caret">social</span>
+                            <ul class="nested">
+                              
+                            </ul>
+                        </li>
+                        <li><span class="caret">fun</span>
+                            <ul class="nested">
+                              
+                            </ul>
+                        </li>
+                        <li><span class="caret">etc</span>
+                            <ul class="nested">
+                              
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ h1 {
   color: transparent;
 }
 
+
 .tablebody {
   padding: 5px;
   border-radius: 5px;
@@ -50,13 +51,13 @@ h1 {
 
 #sunflower01 {
   position: absolute;
-  top: 130px;
+  top: 140px;
   right: 285px;
 }
 
 #sunflower02 {
   position: absolute;
-  top: 130px;
+  top: 140px;
   right: 50px;
 }
 

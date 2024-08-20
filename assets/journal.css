@@ -198,3 +198,6 @@ table,tr,td{padding:20px;}
 .postimg3 {position:relative; top:3px;}
 .postimg2 {position:relative; top:6px;}
 
+#entrythreepixels{text-align:center;}
+#entrythreepixels img{max-height:50px; padding:2px;}
+#entrythreepixels img:hover{max-height:300px;}
