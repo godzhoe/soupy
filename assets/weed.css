@@ -13,23 +13,57 @@
 }
 
 table {
-    width: 750px;
+    width: 850px;
 }
 
 #primary {
-    width: 450px;
+    width: 500px;
     text-align: center;
-    margin: 20px;
+
     padding: 20px;
+
 }
 
 
 #header {
     text-align: center;
+    
 }
 
-#journal{height:400px;}
+#journal{height:400px;
+background:url('./pictures/journalpage.jpg'); background-size:contain; background-repeat:no-repeat;}
 
-table, tr, td {
-    border: 1px dotted black;
+#journalheader{font-family:afterschool; font-size:24px;  transform:rotate(5deg); margin-left:200px; margin-top:25px;} 
+
+
+.post {
+    display: none;
+    margin-left:20px;
+
+    height:300px;
+    position:relative;
+    
+}
+
+.post:last-child{
+    display:block;
+}
+
+#nextbutton, #prevbutton{position:relative; }
+#nextbutton{ transform:rotate(-15deg); left:240px; z-index:1;}
+#prevbutton{ transform:rotate(15deg); left:-10px; z-index:1;}
+
+button {
+    background: none;
+    font-family:afterschool;
+    border: none;
+    font-size:24px;
+    display:inline;
+
+    text-align: left !important;
+
+  }
+
+#primarytext{
+    position:relative; top:-100px;
 }

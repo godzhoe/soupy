@@ -3,6 +3,19 @@
     @font-face {
     font-family:'phoenix'; src: url("./Web437_PhoenixVGA_8x8.woff") format("woff"); }
 
+    @font-face {
+        font-family:'tzerowebfont'; src: url("./fonts/000webfont.ttf"); }
+        @font-face {
+            font-family:'lovelyvalentine'; src: url("./fonts/Lovely\ Valentine.ttf"); }
+            @font-face {
+                font-family:'heartlove'; src: url("./fonts/heart\ love.ttf"); }
+        @font-face{font-family:'vcrosdmono'; src: url("./fonts/VCR_OSD_MONO_1.001.ttf");}
+        @font-face{font-family:'5squaredpixel'; src: url("./fonts/5squared-pixel.ttf");}
+        @font-face{font-family:'kakomic'; src: url("./fonts/KakomiC.ttf")}
+        @font-face{font-family:'existentialism'; src: url("./fonts/Existentialism.ttf")}
+        @font-face{font-family:'afterschool'; src:url("./fonts/Afterschool.ttf")}
+        
+
 ::selection {
         color: white;
         background-color: black;

@@ -12,27 +12,97 @@
 
 
 #tableux {
-    width: 825px;
-    height:400px;
-
+    width: 850px;
+    height: 400px;
+    margin-left: -12px;
 
 }
 
-#stats{height:305px; overflow-y:scroll; width:250px; padding:0 20px 0 20px;}
-#bio {
-text-align:center;
-    display: block;
-    height:  426px;
-    overflow-x: hidden;
+body {
+    background: url('./pictures/backgrounds/i01-bg-cloth.gif')
+}
+
+#stats {
+    height: 275px;
     overflow-y: scroll;
-    position:relative;
-    z-index:1;
-    padding:0 20px 0 20px;
-    width:375px;
+    width: 325px;
+}
+
+#statstext, #cliquey {
+    border: 2px dashed #588e50;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    background-color: #faf7e6;
+    box-shadow: 0 0 0 3px #faf7e6;
+}
+
+#cliquey{
+    height:85px;
+    margin-top:20px;
+    overflow-y:scroll;
+}
+#bio {
+    text-align: center;
+
+    height: 450px;
+    overflow-x: hidden;
+
+    position: relative;
+    z-index: 1;
+    padding: 0 20px 0 20px;
+    width: 375px;
+}
+
+#biotext {
+    border-right: 2px dashed #588e50;
+    border-top: 2px dashed #588e50;
+    border-bottom: 2px dashed #588e50;
+    padding: 0 10px 0 10px;
+    border-radius: 0 10px 10px 0;
+    background-color: #faf7e6;
+    box-shadow: 0 0 0 3px #faf7e6;
 }
 
 #buttons {
-    height: 400px;
+    height: 440px;
+
+}
+
+#buttoninner {
+    border-left: 2px dashed #588e50;
+    border-top: 2px dashed #588e50;
+    border-bottom: 2px dashed #588e50;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 0 0 10px;
+    z-index:2;
+    position: relative;
+    left: 34px;
+    background-color: #faf7e6;
+    box-shadow: 0 3px 0 #faf7e6, -3px 0 0 #faf7e6, 0 -3px 0 #faf7e6;
+}
+
+#seafoamgreen,
+#sagegreen,
+#redpink,
+#lightpink {
+    display: inline;
+    color: rgba(0, 0, 0, 0);
+}
+
+#seafoamgreen {
+    background-color: #a0d6b4;
+}
+
+#sagegreen {
+    background-color: #B2BE8E;
+}
+
+#redpink {
+    background-color: #e68686;
+}
+
+#lightpink {
+    background-color: #e9bfcf;
 }
 
 .marquee {
@@ -42,12 +112,14 @@ text-align:center;
     align-items: center;
     justify-content: center;
     width: 88px;
-    height: 440px;
+    height: 423.5px;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
     white-space: nowrap;
 
 }
+
+
 
 .marquee--inner {
     display: block;
@@ -74,12 +146,12 @@ text-align:center;
 }
 
 #footer {
-    width:300px;
+    width: 300px;
     text-align: right;
-    position:relative;
-   
+    position: relative;
 
-
+    text-shadow: 2px 0 #faf7e6, -2px 0 #faf7e6, 0 2px #faf7e6, 0 -2px #faf7e6,
+        1px 1px #faf7e6, -1px -1px #faf7e6, 1px -1px #faf7e6, -1px 1px #faf7e6
 }
 
 #scroll {
@@ -88,22 +160,35 @@ text-align:center;
     font-size: 8px;
     margin-left: 370px;
     margin-top: -50px;
-   z-index:0;
-   width:20px;
+    z-index: 0;
+    width: 20px;
 }
 
 
-#mylist{
-   position:relative;
-   top:-2px;
+#mylist {
+    position: relative;
+    top: -2px;
 }
 
-h3{
-    position:relative;
-    left:20px;
+h3 {
+    position: relative;
+    padding-left: 20px !important;
 }
-#mylistheader{
-    position:relative;
-    top:-5px;
- }
- #mypng{position:relative;}
+
+#mylistheader {
+    position: relative;
+    top: -5px;
+}
+
+#mypng {
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    background: url('./pictures/backgrounds/c04-bg-grid.gif');
+    padding: 2px;
+    background-color: #faf7e6;
+    box-shadow: 0 2px #588e50;
+}

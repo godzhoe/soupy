@@ -5,6 +5,7 @@ body {
     margin: 0;
     scrollbar-width: none;
     -ms-overflow-style: none !important;
+    background: url('./pictures/backgrounds/i01-bg-cloth.gif')
 }
 
 ::scrollbar {
@@ -126,6 +127,14 @@ button:hover {
     height: 500px;
     overflow-x: hidden;
     overflow-y: scroll;
+    background-color: #faf7e6;
+
+    border: 2px dashed #588e50;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    background-color: #faf7e6;
+    box-shadow: 0 0 0 3px #faf7e6;
+
 
 }
 
@@ -201,3 +210,10 @@ table,tr,td{padding:20px;}
 #entrythreepixels{text-align:center;}
 #entrythreepixels img{max-height:50px; padding:2px;}
 #entrythreepixels img:hover{max-height:300px;}
+
+.journalheader{
+    background: url('./pictures/backgrounds/c04-bg-grid.gif');
+    padding: 2px;
+    background-color: #faf7e6;
+    box-shadow: 0 2px #588e50;
+}

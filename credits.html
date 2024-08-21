@@ -15,17 +15,14 @@
   <div id="cont">
 
 <div id="header"><h1> credits </h1>
-<p>these are credits for all the assets i used. the coding for this site is ~generally~ my own.</p></div>
+<p>these are credits for all the assets i used. the coding for this site is ~generally~ my own. <button onclick="expand()">expand</button></p></div>
 
 <div id="core">
 
 <ul id="myUL">
   <li><span class="caret">sitewide</span>
     <ul class="nested">
-      <li><span class="caret">frames</span>
-        <ul class="nested">
-          <li>frame 08-a -- <a href="https://foollovers.com/mat/t-frame08.html">fool lovers</a></li>  
-        </ul>
+      
         <li><span class="caret">fonts</span>
             <ul class="nested">
               <li>sperrypc cga 8x8 <span id="note">* main font</span> -- <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?phoenixvga_8x8">int10h</a> </li>
@@ -41,6 +38,7 @@
               <li>strawberry girl -- <a href="https://web.archive.org/web/20100419011042/http://neskaya.net/pixels.php?cat=Strawberries_Pixels">neskaya</a></li>
               <li>sunflowers -- <a href="https://foollovers.com/mat/i-s-sm19.html">fool lovers</a></li>  
               <li>construction -- <a href="https://web.archive.org/web/20091025145420/http://geocities.com/paradisesurfing/musica/bobmarley.html">gifcities</a></li>
+              <li>background -- <a href="https://foollovers.com/mat/cloth09.html">fool lovers</a></li>
             </ul>
           </li>
     </ul>
@@ -56,43 +54,65 @@
             <li>subheader sheep -- <a href="https://foollovers.com/mat/i-animalset13.html">fool lovers</a></li>
             <li>subheader strawberry -- <a href="https://foollovers.com/mat/i-food02.html">fool lovers</a></li>
             <li>ladybug -- <a href="http://sorahana.ciao.jp/itempage.htm">sorahana</a></li>
-            <li>background -- <a href="https://foollovers.com/mat/food04.html">fool lovers</a></li>
+            <li>header bg -- <a href="https://foollovers.com/mat/plaid03.html">fool lovers</a></li>
+            <li>background -- <a href="https://foollovers.com/mat/cloth09.html">fool lovers</a></li>
           </ul>
         </li>
   </ul>
 </li>
 <li><span class="caret">journal.html</span>
   <ul class="nested">
+  <li><span class="caret">frames</span>
+    <ul class="nested">
+      <li>frame 08-a -- <a href="https://foollovers.com/mat/t-frame08.html">fool lovers</a> (recolored)</li>  
+    </ul>
+    </li>
       <li><span class="caret">images</span>
           <ul class="nested">
             <li>phone -- <a href="http://whimsical.heartette.net/material/diary2">whimsical</a></li>
             <li>strawberry favicon -- <a href="https://sadthemes.tumblr.com/smolpxl">sadthemes</a></li> 
             <li>sunflower lacroix -- <a href="https://www.lejlart.com/apple.html">lejlart</a></li>
             <li>plants -- <a href="https://www.lejlart.com/apple.html">lejlart</a></li>
+            <li>header bg -- <a href="https://foollovers.com/mat/plaid03.html">fool lovers</a></li>
+            <li>background -- <a href="https://foollovers.com/mat/cloth09.html">fool lovers</a></li>
           </ul>
         </li>
   </ul>
 </li>
-<!-- <li><span class="caret">weed.html</span>
+ <li><span class="caret">weed.html</span>
   <ul class="nested">
+    <li><span class="caret">fonts</span>
+        <ul class="nested">
+          <li>existentialism -- <a href="https://salvaged.nu/2023/04/29/7x-brushes-and-4x-fonts-from-juvenilecasualty-net/">juvenilecasualty</a></li>
+          <li>after school -- <a href="https://salvaged.nu/2023/04/29/7x-brushes-and-4x-fonts-from-juvenilecasualty-net/">juvenilecasualty</a></li>  
+        </ul>
       <li><span class="caret">images</span>
           <ul class="nested">
             <li>cat plant -- <a href="https://artwork.neocities.org/stickers">artwork</a></li>
             <li>weed leaf -- <a href="https://web.archive.org/web/20090903015141/http://geocities.com/psychadelic_flashback/Interstate_420-2">gifcities</a></li>
+            <li>journal page -- <a href="https://salvaged.nu/2023/11/01/46x-stock-images-from-swimchick-net/">swimchick</a></li>
+            
           </ul>
         </li>
   </ul>
-</li> -->
-<!-- <li><span class="caret">resources.html</span>
+</li> 
+<li><span class="caret">resources.html</span>
   <ul class="nested">
+    <li><span class="caret">fonts</span>
+        <ul class="nested">
+          <li>heart love -- <a href="https://www.dafont.com/heart-love-2.font">amarlettering</a></li>
+        </ul>
       <li><span class="caret">images</span>
           <ul class="nested">
-            <li>star -- <a href="http://frank-web.net/item/index.htm">frank-web</a></li>
+            <li>star, flower, mushroom icons -- <a href="http://frank-web.net/item/index.htm">frank-web</a></li>
             <li>fae house -- <a href="https://artwork.neocities.org/garden">artwork</a></li>
+            <li>my melody figure -- <a href="https://prismatic-realm.net/graphics/#figs">prismatic realm</a></li>
+            
+
           </ul>
         </li>
   </ul>
-</li> -->
+</li> 
 
 </ul>
 </div>
@@ -107,6 +127,18 @@ for (i = 0; i < toggler.length; i++) {
     this.classList.toggle("caret-down");
   });
 }
+
+function expand(){
+        var toggler = document.getElementsByClassName("nested");
+        var carets = document.getElementsByClassName("caret");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+                toggler[i].classList.add("active");
+        }
+        for (i = 0; i < carets.length; i++) {
+                carets[i].classList.add("caret-down");
+        }}
 </script>
 </div></div>
 </body>

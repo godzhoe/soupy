@@ -22,7 +22,16 @@ ul, #myUL {
   padding: 0;
 }
 
-
+button {
+  background: none;
+  
+  border: none;
+  font-family: sperrypg;
+  display:inline;
+  font-size: 9px;
+  text-align: left !important;
+  color: rgb(89, 132, 40);
+}
 
 li {
     padding:5px;

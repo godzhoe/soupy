@@ -11,50 +11,128 @@
 
 
 </head>
-
+<!--
+<div id="1" class="post active">
+                            <p>entry written <br>
+                            <strong>brand:</strong> <br>
+                            <strong>strain:</strong> <br>
+                            <strong>thc%:</strong> <br>
+                            <strong>terpene%:</strong> <br>
+                            <strong>major terpenes:</strong> <br>
+                            <strong>rating:</strong> /5<br>
+                            <br>
+                            review text here</p>
+                        </div>
+                        
+                        -->
 <body>
     <div id="main">
         <table>
             <tr>
                 <td colspan="2" id="header">
-                    <h1><img src="./assets/pictures/weedleaf.gif"> the soup weed page <img
-                            src="./assets/pictures/weedleaf.gif"></h1>
+                    <h1 style="font-family:existentialism; font-size:40px;"><img src="./assets/pictures/weedleaf.gif">
+                        the soup weed page <img src="./assets/pictures/weedleaf.gif"></h1>
                 </td>
             </tr>
             <tr>
-                <td id="primary">
+                <td id="primary"><div id="primarytext">
                     <p><img src="./assets/pictures/kitties.png" style="float:left; padding:5px;">welcome to my
                         "gardening" page! personally, i think that weed being your entire personality is cringe, BUT i
-                        smoke a lot for medical and recreational reasons :) a good thing to log here, right?<br><br>here
+                        smoke a lot for medical and recreational reasons :) seems like a good thing to log here,
+                        right?<br><br>here
                         you will find lots and lots of things about marijuana. if that makes you uncomfortable, check
-                        out any of my other pages!</p>
-                </td>
+                        out any of my other pages!<br></p>
+                    <p style="text-align:left"><Br>resources! readings, etc.<br>
+                        <a href="https://www.cannabis-marijuana.com/canab.html">cannabis-marijuana.com</a> : a
+                        ridiculous amount of info on weed
+                        <a href="./assets/foryou/The cannabis manifesto_ a new paradigm for wellness -- DeAngelo, Steve -- 2015 -- Berkeley, California_ North Atlantic Books -- 1583949380 -- c3909c8a4979db64b73269bd2d7937bd -- Anna’s Archive-2.pdf"
+                            target="_blank">the cannabis manifesto</a> : saw this in a dispensary once<br>
+                            <a href="https://cannabistraininguniversity.com/medical/list-terpenes/">terpene guide</a> : for <em>really</em> knowing which strain to smoke
+                    </p>
+                    <p>toolkit! hover for info</p>
+                    <p style="text-align:right;"><a href="./index.html">home</a></p>
+                </div></td>
                 <td id="journal" rowspan="2">
-                    journal log
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    resources! readings, etc.<br>
-                    <a href="https://www.cannabis-marijuana.com/canab.html">cannabis-marijuana.com</a> : a ridiculous amount of info on weed
-                    <a href="./assets/foryou/The cannabis manifesto_ a new paradigm for wellness -- DeAngelo, Steve -- 2015 -- Berkeley, California_ North Atlantic Books -- 1583949380 -- c3909c8a4979db64b73269bd2d7937bd -- Anna’s Archive-2.pdf" target="_blank">the cannabis manifesto</a> : saw this in a dispensary once<br>
-                    tba
-                </td>
+                    <div id="journalheader">my log</div>
+                    <div id="journalcontent">
+                        <div id="2" class="post">
+                            <p>right now, i only have one entry. come back soon for more! :3</p>
+                        </div>
+                        <div id="1" class="post active">
+                            <p>entry written 08212024<br>
+                            <strong>brand:</strong> grassroots<br>
+                            <strong>strain:</strong> raymond berry runtz<br>
+                            <strong>thc%:</strong> 22.187<br>
+                            <strong>terpene%:</strong> 2.42<br>
+                            <strong>major terpenes:</strong> linalool 0.58, caryophyllene 0.49, limonene 0.4<br>
+                            <strong>rating:</strong> 3/5<br>
+                            <br>
+                            once, i smoked this and my entire face went numb. i wonder if it was the mold. but i can't say it didn't get me high</p>
+                        </div>
+                    </div>
+    </div>
 
-            </tr>
-            <tr>
-                <td colspan="2">
-                    tool collection
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align:right;">
-                    <a href="./index.html">home</a>
-                </td>
-            </tr>
-        </table>
+    <div id="nextbutton"><button onclick="nextpage()">next</button></div>
+    <div id="prevbutton"><button onclick="prevpage()">prev</button></div>
+    </td>
+    </tr>
+    <tr>
+        <td>
+
+        </td>
+
+    </tr>
+
+    
+    </table>
 
     </div>
+
+    <script>
+
+
+        function connect(entry) {
+            var i, post;
+            post = document.getElementsByClassName("post");
+            for (i = 0; i < post.length; i++) {
+                post[i].style.display = "none";
+                if (post[i].classList.contains("active")) {
+                    post[i].classList.remove("active")
+                }
+
+            }
+            document.getElementById(entry).style.display = "block";
+            document.getElementById(entry).className += " active";
+            var div = document.getElementById(entry);
+
+            post = document.getElementsByClassName("post");
+            currententry = document.getElementsByClassName("active");
+        }
+
+        function nextpage() {
+            post = document.getElementsByClassName("post");
+            currententry = document.getElementsByClassName("active");
+            var h = parseInt(currententry[0].id);
+            if (h == post.length) {
+                connect(1);
+            }
+            else {
+                connect(h + 1);
+            }
+        }
+        function prevpage() {
+            post = document.getElementsByClassName("post");
+            currententry = document.getElementsByClassName("active");
+            var h = parseInt(currententry[0].id);
+            if (h == 1) {
+                connect(post.length);
+            }
+            else {
+                connect(h - 1);
+            }
+        }
+
+    </script>
 </body>
 
 </html>

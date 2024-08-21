@@ -12,13 +12,29 @@
 
 }
 
-table {
-    width: 800px;
+body{
+  background:url('./pictures/backgrounds/hart_p_gingam_t.gif');
+  color: rgb(126, 55, 73);
 }
 
-#lynx{width:500px;}
+a{color:#c36883;}
+
+table {
+    width: 1100px;
+    border:1px rgb(126, 55, 73) dashed;
+    background-color:#f9f4f5;
+    border-radius:20px;
+
+}
+
+#lynx{width:500px; padding:20px; height:400px; overflow-y:scroll;
+}
+#sidebar{border-right:1px rgb(126, 55, 73) dashed; padding:20px;}
+#rightbar{border-left:1px rgb(126, 55, 73) dashed; padding:20px; position:relative; bottom:0;}
+#header{border-bottom:1px rgb(126, 55, 73) dashed; padding:20px; text-align:center;}
 
 .caret {
+  font-family:phoenix;  letter-spacing:0px;
     cursor: pointer;
     -webkit-user-select: none; /* Safari 3.1+ */
     -moz-user-select: none; /* Firefox 2+ */
@@ -39,6 +55,12 @@ table {
   
   .nested {
     display: none;
+    font-family:sperrypg;
+    font-size:9px;
+    line-height:13px;
+    letter-spacing:-1px;
+    padding-left:10px;
+
   }
   
   .active {
@@ -47,15 +69,40 @@ table {
 
 ul, #myUL {
     list-style-type: none;
+
   }
   
   #myUL {
     margin: 0;
     padding: 0;
   }
-  
+  a:hover, button:hover{
+    text-transform:uppercase;
+    text-decoration:#c36883 dashed underline;
+}
   
   
   li {
-      padding:5px;
+      padding:2px;
+    
+  }
+
+#header{font-family:heartlove; font-size:72px; letter-spacing:0; 
+  color:rgb(172, 66, 92);
+
+  text-shadow: 2px 0 #f9f4f5, -2px 0 #f9f4f5, 0 2px #f9f4f5, 0 -2px #f9f4f5,
+  1px 1px #f9f4f5, -1px -1px #f9f4f5, 1px -1px #f9f4f5, -1px 1px #f9f4f5;}
+
+  #fonts{line-height:3em; letter-spacing:0px;}
+  #fonts a:hover{    text-transform:lowercase;}
+
+  button {
+    background: none;
+    
+    border: none;
+    font-family: sperrypg;
+    display:inline;
+    font-size: 9px;
+    text-align: left !important;
+    color:#c36883;
   }
