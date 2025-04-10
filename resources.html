@@ -12,12 +12,13 @@
 
 </head>
 
-<body>
+<body  onload="expand()">
     <div id="main">
         <table>
             <tr><td colspan="3" id="header">oupy.online link and resource hu</td></tr>
             <tr>
-                <td id="sidebar"><img src="./assets/pictures/fae_vill.gif"><br><br>
+                <td id="sidebar">i love collecting, so this is the mass culmination of everything i've found to help design, decorate, and learn about handmade websites! if you found this helpful, maybe sign my <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34211-fe">guestbook</a> about it? <3<br><p style="text-align:right;">-soup</p>
+                    <img src="./assets/pictures/catbasket.png"><br><br>
                     
                     directories: 6<br>
                     material: 26<br>
@@ -30,13 +31,20 @@
                     total: 34<br><br>
                     <img src="./assets/pictures/personalfave.gif">: personal fave<br>
                     <img src="./assets/pictures/archivedsite.gif">: archived website<br>
-                    <img src="./assets/pictures/nonenglishsite.gif">: website not in english</td>
+                    <img src="./assets/pictures/nonenglishsite.gif">: website not in english<br><br>
+                    
+                   
+                    <p style="text-align:center;"></p>
+                    <p><br>
+                        started: 08202024<br> 
+                        last updated: 04102025 <br></p>
+                    <p style="text-align:right;"><a href="./index.html">home</p></td>
                 <td><div id="lynx">
-                    click one of these options to get started! or <button onclick="expand()">expand all?</button>
+                    <button onclick="minimi()">minimize all</button> | <button onclick="expand()">expand all</button>
                     <br>
                     <ul id="myUL">
                         <li><span class="caret">directories</span>
-                            <ul class="nested">
+                            <ul class="nested nested-wrap">
                                 <li><img src="./assets/pictures/personalfave.gif"> <a href="https://directory.cinni.net/">ichigo</a></li>
                                 <li><a href="https://linklane.net/index.php">linklane</a></li>
                                 <li><a href="https://youtuube.neocities.org/Websites.html">youtuube's directory</a></li>
@@ -49,7 +57,7 @@
                         <li><span class="caret">material</span>
                             <ul class="nested">
                                 <li><span class="caret">sozai</span>
-                                    <ul class="nested">
+                                    <ul class="nested nested-wrap">
                                         <li><img src="./assets/pictures/personalfave.gif"> <img src="./assets/pictures/nonenglishsite.gif"> <a href="https://foollovers.com/mat/index.html">fool lovers</a></li>
                                         <li><img src="./assets/pictures/personalfave.gif"> <img src="./assets/pictures/nonenglishsite.gif"> <a href="http://frank-web.net/item/index.htm">frank-web</a></li>
                                         <li><img src="./assets/pictures/nonenglishsite.gif"> <a href="http://www.travelmin.com/sozai/sozai_top.htm">travelmin</a></li>
@@ -63,7 +71,7 @@
                                     </ul>
                                 </li>
                                 <li><span class="caret">graphics</span>
-                                    <ul class="nested">
+                                    <ul class="nested nested-wrap">
                                  <li><img src="./assets/pictures/archivedsite.gif"> <a href="https://web.archive.org/web/20100611204041/http://neskaya.net/">neskaya</a></li>
                                 <li><img src="./assets/pictures/personalfave.gif"> <a href="http://artwork.neocities.org/graphics">artwork</a></a></li>
                                 <li><a href="http://whimsical.heartette.net/material/">whimsical</a></li>
@@ -130,14 +138,7 @@
                         </li>
                     </ul>
                 </div></td>
-                <td id="rightbar">
-                    i love collecting, so this is the mass culmination of everything i've found to help design, decorate, and learn about handmade websites! if you found this helpful, maybe sign my <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34211-fe">guestbook</a> about it? <3<br><p style="text-align:right;">-soup</p>
-                   
-                    <p style="text-align:center;"><img src="./assets/pictures/mymelody.png" width="120px"></p>
-                    <p><br>
-                        started: 08202024<br> 
-                        last updated: 08212024 <br></p>
-                    <p style="text-align:right;"><a href="./index.html">home</p></td>
+
             </tr>
         </table>
     </div>
@@ -153,6 +154,7 @@
         }
 
         function expand(){
+            console.log("hello")
         var toggler = document.getElementsByClassName("nested");
         var carets = document.getElementsByClassName("caret");
         var i;
@@ -162,6 +164,19 @@
         }
         for (i = 0; i < carets.length; i++) {
                 carets[i].classList.add("caret-down");
+        }}
+        function minimi(){
+
+        var toggler = document.getElementsByClassName("nested");
+        var carets = document.getElementsByClassName("caret");
+        
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+                toggler[i].classList.remove("active");
+        }
+        for (i = 0; i < carets.length; i++) {
+                carets[i].classList.remove("caret-down");
         }}
     </script>
 </body>

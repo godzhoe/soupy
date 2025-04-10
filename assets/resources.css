@@ -13,25 +13,25 @@
 }
 
 body{
-  background:url('./pictures/backgrounds/hart_p_gingam_t.gif');
-  color: rgb(126, 55, 73);
+  background:url('./pictures/backgrounds/y01-bg-biascheck.gif');
+  color: rgb(109, 41, 44);
 }
 
-a{color:#c36883;}
+a{color:#af5153;}
 
 table {
     width: 1100px;
-    border:1px rgb(126, 55, 73) dashed;
-    background-color:#f9f4f5;
+    border:1px #7e3737 dashed;
+    background-color:#fefae6;
     border-radius:20px;
 
 }
 
-#lynx{width:500px; padding:20px; height:400px; overflow-y:scroll;
+#lynx{width:800px; padding:20px; height:600px; overflow-y:scroll;
 }
-#sidebar{border-right:1px rgb(126, 55, 73) dashed; padding:20px;}
-#rightbar{border-left:1px rgb(126, 55, 73) dashed; padding:20px; position:relative; bottom:0;}
-#header{border-bottom:1px rgb(126, 55, 73) dashed; padding:20px; text-align:center;}
+#sidebar{border-right:1px #7a2432 dashed; padding:20px; width:300px;}
+#rightbar{border-left:1px #7a2432 dashed; padding:20px; position:relative; bottom:0;}
+#header{border-bottom:1px #7a2432 dashed; padding:20px; text-align:center;}
 
 .caret {
   font-family:phoenix;  letter-spacing:0px;
@@ -61,8 +61,13 @@ table {
     letter-spacing:-1px;
     padding-left:10px;
 
+
   }
   
+  .nested-wrap{
+    column-count:3;
+    column-gap:100px;
+  }
   .active {
     display: block;
   }
@@ -88,12 +93,14 @@ ul, #myUL {
   }
 
 #header{font-family:heartlove; font-size:72px; letter-spacing:0; 
-  color:rgb(172, 66, 92);
+  color:rgb(148, 49, 54);
 
-  text-shadow: 2px 0 #f9f4f5, -2px 0 #f9f4f5, 0 2px #f9f4f5, 0 -2px #f9f4f5,
-  1px 1px #f9f4f5, -1px -1px #f9f4f5, 1px -1px #f9f4f5, -1px 1px #f9f4f5;}
+  text-shadow: 2px 0 #fefae6, -2px 0 #fefae6, 0 2px #fefae6, 0 -2px #fefae6,
+  1px 1px #fefae6, -1px -1px #fefae6, 1px -1px #fefae6, -1px 1px #fefae6;}
 
-  #fonts{line-height:3em; letter-spacing:0px;}
+  #fonts{line-height:3em; letter-spacing:0px;
+    column-count:2;
+    column-gap:50px;}
   #fonts a:hover{    text-transform:lowercase;}
 
   button {
@@ -104,5 +111,5 @@ ul, #myUL {
     display:inline;
     font-size: 9px;
     text-align: left !important;
-    color:#c36883;
+    color:#af5153;
   }

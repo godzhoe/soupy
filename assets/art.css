@@ -1,0 +1,49 @@
+#main {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: float;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -5em;
+}
+
+body {
+    background: url('./pictures/backgrounds/i01-bg-cloth.gif')
+}
+
+#myart, #sidebar{
+    border: 2px dashed #588e50;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    background-color: #faf7e6;
+    box-shadow: 0 0 0 3px #faf7e6;
+}
+td{ padding: 0 20px 0 20px;}
+#myart{
+    width:500px;
+    height:400px;
+}
+#sidebar{
+    width:250px;
+    height:400px;
+}
+
+#header{
+    font-family:heartlove;
+    letter-spacing:0;
+    font-size:84px;
+
+   position:relative;
+   left:92px;
+   text-shadow: 2px 0 #f9f4f5, -2px 0 #f9f4f5, 0 2px #f9f4f5, 0 -2px #f9f4f5,
+  1px 1px #f9f4f5, -1px -1px #f9f4f5, 1px -1px #f9f4f5, -1px 1px #f9f4f5;}
+
+  .subhead{
+    background: url('./pictures/backgrounds/c04-bg-grid.gif');
+    padding: 2px;
+    background-color: #faf7e6;
+    box-shadow: 0 2px #588e50;
+  }
